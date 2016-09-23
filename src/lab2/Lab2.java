@@ -1,5 +1,3 @@
-package lab2;
-
 import java.util.Scanner;
 
 /**
@@ -10,9 +8,8 @@ import java.util.Scanner;
 
 //this class will implement the linked list for stack and its operations
 public class Lab2<T> {
-    
     public static void main(String[] args){
-        Stack<String> stack = new Stack<>();
+        Stack<String> stack = new Stack<String>();
         
         System.out.println("Enter a postfix expression: ");
         Scanner kb = new Scanner(System.in); 

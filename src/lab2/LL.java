@@ -1,4 +1,3 @@
-package lab2;
 /**
  *
  * @author Steve
@@ -12,13 +11,13 @@ public class LL<T> {
     int size;
     
     public LL(){
-        this.head = new ListElement<>();
+        this.head = new ListElement<T>();
         this.tail = head;
         this.size = 0;
     }
     
     public void insertAtHead(T value){
-        this.head.setLink(new ListElement<>(value, head.getLink()));
+        this.head.setLink(new ListElement<T>(value, head.getLink()));
         this.size++;
         if (this.tail == this.head){
             this.tail = head.getLink();

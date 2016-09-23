@@ -1,4 +1,3 @@
-package lab2;
 /**
  *
  * @author Steve
@@ -9,7 +8,7 @@ public class Stack<T>
   private LL<T> theStack;
 
   public Stack(){
-    theStack = new LL<>();
+    theStack = new LL<T>();
   }
 
   public boolean isEmpty(){
